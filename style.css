@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.titilebox {
+  width: 300px;
+  height: 15px;
+  padding: 2px;
+  margin: 1px;
+  max-width: 95%;
+  max-height: 86%;
+  border: 2px solid black;
+}
+
+
+.bbox {
+  width: 360px;
+  height: 230px;
+  border: 7px solid green;
+  padding: 2 auto;
+  margin: 0;
+  resize: both;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+
+.bbox > textarea {
+  width: 95%;
+  height: 86%;
+  padding: 2px; 
+  margin: 1px;
+  flex: grow;
+  resize: none;
+  border: 2px solid black;
+}
+
+.button {
+    background: #4CAF50;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 14px;
+    height: 40px;
+    min-width: 70px;
+    font-size: 15px;;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex-auto;
+}
+
+.randoitem {
+  text-align: center;
+}
