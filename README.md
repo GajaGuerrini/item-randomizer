@@ -8,4 +8,17 @@ Future features:
 
 User case:
 
+1. fill the second box with items, each in new line:  
+
+bedroll 
+food
+water
+weapon
+coins
+lucky charm
+
  ![image](image.png)
+
+2. click on get item
+    
+![image](image_2.png)

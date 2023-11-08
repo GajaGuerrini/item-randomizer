@@ -14,6 +14,6 @@ function clickGetItem() {
     console.log(array)
     item = array[Math.floor(Math.random()*array.length)];
     console.log(item)
-    document.getElementById("item").innerHTML = item;
+    document.getElementById("item").innerHTML = nameOfTable + " : " + item;
     
 }
