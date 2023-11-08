@@ -1,6 +1,6 @@
 # item-randomizer
 GOAL:  fully customizable virtual game master screen.
-CURRENT: Insert your items here (each item in a new line) and a rendom get one.
+CURRENT: Insert your items here (each item in a new line) and a random get one.
 
 Future features:
   - ignoring empty new lines
@@ -8,7 +8,7 @@ Future features:
 
 User case:
 
-1. fill the second box with items, each in new line:  
+1. fill the bigger textbox with items, each in new line:  
 
 bedroll 
 food
