@@ -20,4 +20,3 @@ lucky charm ![image](image.png)
   4. 
   5. 
   6. 
-![image](image_2.png)
