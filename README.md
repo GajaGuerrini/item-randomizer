@@ -16,7 +16,7 @@ weapon
 coins
 lucky charm ![image](image.png)
   3. click on get item
-  ![image](image_2.png
+![image](image_2.png)
   4. 
   5. 
   6. 
