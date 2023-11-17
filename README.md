@@ -6,19 +6,15 @@ Future features:
   - ignoring empty new lines
   - roll-ability of multiple tables
 
-User case:
-
-1. fill the bigger textbox with items, each in new line:  
-
-bedroll 
+HOW TO USE?
+  0. Visit the site  https://item-randomizer--gajaguerrini.repl.co
+  1. fill the bigger textbox with items, each in new line bedroll 
 food
 water
 weapon
 coins
-lucky charm
-
- ![image](image.png)
-
-2. click on get item
-    
+lucky charm ![image](image.png)
+  3. click on get item ![image](image_2.png
+  4. 
+  5. 
 ![image](image_2.png)
