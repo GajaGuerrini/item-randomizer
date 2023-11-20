@@ -14,7 +14,7 @@ html {
 }
 
 
-.bbox {
+.itembox {
   width: 360px;
   height: 230px;
   border: 7px solid green;
@@ -27,7 +27,7 @@ html {
 }
 
 
-.bbox > textarea {
+.itembox > textarea {
   width: 95%;
   height: 86%;
   padding: 2px; 
@@ -37,8 +37,23 @@ html {
   border: 2px solid black;
 }
 
-.button {
+.button1 {
     background: #4CAF50;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 14px;
+    height: 40px;
+    min-width: 70px;
+    font-size: 15px;;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex-auto;
+}
+
+.button2 {
+    background: #0000a0;
     border: none;
     outline: none;
     color: #ffffff;
