@@ -7,6 +7,24 @@ document.addEventListener('click', function (event) {
     }
 });
 
+function getAllFnameElements() {
+    // Assume all containers have the class "itemboxbox"
+    var containers = document.querySelectorAll('.itemboxbox');
+    console.log(containers)
+    // Variable to store all id="fname" elements
+    var allFnameElements = [];
+    // Loop through each container and get the id="fname" element
+    containers.forEach(function(container) {
+        var fnameElement = container.querySelector("#fname");
+        if (fnameElement) {
+            allFnameElements.push(fnameElement);
+        }
+    });
+    return allFnameElements
+}
+
+
+
 function clickGetItem(button) {
   console.log(button)
   var container = button.closest('.itembox');
@@ -15,8 +33,9 @@ function clickGetItem(button) {
 
   const array = listOfItems.split(/\r?\n/);
   var item = array[Math.floor(Math.random()*array.length)];
-
+  var fnames = getAllFnameElements();
   container.querySelector("#item").innerHTML = nameOfTable + " : " + item;
+  console.log(fnames)
     
 }
 
