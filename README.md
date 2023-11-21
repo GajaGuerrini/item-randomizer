@@ -27,4 +27,4 @@ lucky charm_ ![image](image.png)
   6. Fill it out like described in step 1 and 2. Enjoy rolling your items by clicking get item. ![image](image_5.png)
 
 
-Code available at https://github.com/GajaGuerrini/item-randomizer 
+Code available at https://github.com/GajaGuerrini/item-randomizer.

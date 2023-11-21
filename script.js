@@ -1,42 +1,48 @@
-var item;
-var nameOfTable;
-
 document.addEventListener('click', function (event) {
     if (event.target.classList.contains('getItemButton')) {
         clickGetItem(event.target);
     }
 });
 
-function getAllFnameElements() {
+function getFnamesandButtons() {
     // Assume all containers have the class "itemboxbox"
-    var containers = document.querySelectorAll('.itemboxbox');
-    console.log(containers)
-    // Variable to store all id="fname" elements
-    var allFnameElements = [];
+    var containers = document.querySelectorAll('.itembox');
+    var allFnamesButtons = [];
     // Loop through each container and get the id="fname" element
     containers.forEach(function(container) {
         var fnameElement = container.querySelector("#fname");
-        if (fnameElement) {
-            allFnameElements.push(fnameElement);
+        var buttonElement = container.querySelector(".getItemButton");
+        if (fnameElement && buttonElement) {
+            var containerValues = {
+                fname: fnameElement.value,
+                button: buttonElement
+            };
+
+          allFnamesButtons.push(containerValues);
         }
     });
-    return allFnameElements
+
+    return allFnamesButtons;
 }
 
 
 
 function clickGetItem(button) {
-  console.log(button)
   var container = button.closest('.itembox');
   var listOfItems = container.querySelector("#textbox").value;
   var nameOfTable = container.querySelector("#fname").value;
 
   const array = listOfItems.split(/\r?\n/);
   var item = array[Math.floor(Math.random()*array.length)];
-  var fnames = getAllFnameElements();
+  var fnames = getFnamesandButtons();
   container.querySelector("#item").innerHTML = nameOfTable + " : " + item;
-  console.log(fnames)
-    
+  var allValues = getFnamesandButtons();
+  console.log(typeof(allValues))
+  allValues.forEach(function(element) {
+      console.log("fname:", element.fname);
+      console.log("button:", element.button);
+  });
+  
 }
 
 function run() {
@@ -52,4 +58,3 @@ function run() {
     // Append the new itembox to the document
     document.body.appendChild(newItembox);
 }
-
