@@ -37,7 +37,7 @@ bandits
 fortune teller_ <br> ![image](image_7.png)
   3. Create a new table by clicking on "+" button.
   4. To roll multiple tables the table name needs to match an item in the item list. Check your spelling! This feature will not work if you dont ***use the same word***. <br> ![image](image_8.png)
-Click on get item. If the result of _random encounter_ is  _monsters_ the _monsters_ table will automatically be rolled. <br> ![image](image_11.png)
+<br> Click on get item. If the result of _random encounter_ is  _monsters_ the _monsters_ table will automatically be rolled. <br> ![image](image_11.png)
   
 
 
