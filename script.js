@@ -5,10 +5,8 @@ document.addEventListener('click', function(event) {
 });
 
 function getFnamesandButtons() {
-  // Assume all containers have the class "itemboxbox"
   var containers = document.querySelectorAll('.itembox');
   var allFnamesButtons = [];
-  // Loop through each container and get the id="fname" element
   containers.forEach(function(container) {
     var fnameElement = container.querySelector("#fname");
     var buttonElement = container.querySelector(".getItemButton");
@@ -17,15 +15,11 @@ function getFnamesandButtons() {
         fname: fnameElement.value,
         button: buttonElement
       };
-
       allFnamesButtons.push(containerValues);
     }
   });
-
   return allFnamesButtons;
 }
-
-
 
 function clickGetItem(button, nestingcounter) {
   nestingcounter++;
@@ -39,28 +33,18 @@ function clickGetItem(button, nestingcounter) {
 
   var allValues = getFnamesandButtons();
   allValues.forEach(function(element) {
-    //console.log("fname:", element.fname);
-    //console.log("button:", element.button);
-    console.log("count: ", nestingcounter);
     if (item == element.fname && nestingcounter < 20) {
-      //console.log(element.fname);
-      //console.log(element.button);
       clickGetItem(element.button, nestingcounter);
     }
   });
-
 }
 
 function run() {
   var itembox = document.getElementById("itemboxbox");
   var newItembox = itembox.cloneNode(true);
-
-  // Clear the input and output fields in the new itembox
   newItembox.querySelector("#fname").value = "";
   newItembox.querySelector("#textbox").value = "";
   newItembox.querySelector("#getitem").innerHTML = "";
   newItembox.querySelector("#item").innerHTML = "";
-
-  // Append the new itembox to the document
   document.body.appendChild(newItembox);
 }
