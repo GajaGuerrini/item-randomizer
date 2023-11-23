@@ -28,8 +28,15 @@ function clickGetItem(button, nestingcounter) {
   var nameOfTable = container.querySelector("#fname").value;
 
   const array = listOfItems.split(/\r?\n/);
-  var item = array[Math.floor(Math.random() * array.length)];
-  container.querySelector("#item").innerHTML = nameOfTable + " : " + item;
+  const nonEmptyLines = array.filter(line => line.trim() !== '');
+  if (nonEmptyLines.length > 0) {
+    var item = nonEmptyLines[Math.floor(Math.random() * nonEmptyLines.length)];
+     container.querySelector("#item").innerHTML = nameOfTable + " : " + item;
+  } else {
+     container.querySelector("#item").innerHTML = "The table " + nameOfTable + " is empty."
+  }
+
+ 
 
   var allValues = getFnamesandButtons();
   allValues.forEach(function(element) {
