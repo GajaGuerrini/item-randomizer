@@ -5,9 +5,9 @@ GOAL:  fully customizable virtual game master screen. <br>
 - Fill the table with entries and click on get item to roll for a random entry.
 - Multiple tables are available
 - Roll-ability of multiple tables: nest roll up to 20 tables
+- Ignoring empty new lines, added warning for rolling empty table
 
-## FUTURE FEATURES
-  - ignoring empty new lines
+## FUTURE FEATURES:
   - drag and drop tables
 
 ## **HOW TO USE?**
