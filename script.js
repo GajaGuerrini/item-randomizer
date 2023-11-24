@@ -36,8 +36,6 @@ function clickGetItem(button, nestingcounter) {
      container.querySelector("#item").innerHTML = "The table " + nameOfTable + " is empty."
   }
 
- 
-
   var allValues = getFnamesandButtons();
   allValues.forEach(function(element) {
     if (item == element.fname && nestingcounter < 20) {
