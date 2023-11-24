@@ -1,7 +1,10 @@
 document.addEventListener('click', function(event) {
   if (event.target.classList.contains('getItemButton')) {
     clickGetItem(event.target, 0);
-  }
+   } else if (event.target.classList.contains('removeButton')) {
+      removeItemBox(event.target);
+  }  
+
 });
 
 function getFnamesandButtons() {
@@ -23,6 +26,7 @@ function getFnamesandButtons() {
 
 function clickGetItem(button, nestingcounter) {
   nestingcounter++;
+  nestingvalue = 20
   var container = button.closest('.itembox');
   var listOfItems = container.querySelector("#textbox").value;
   var nameOfTable = container.querySelector("#fname").value;
@@ -38,7 +42,7 @@ function clickGetItem(button, nestingcounter) {
 
   var allValues = getFnamesandButtons();
   allValues.forEach(function(element) {
-    if (item == element.fname && nestingcounter < 20) {
+    if (item == element.fname && nestingcounter < nestingvalue) {
       clickGetItem(element.button, nestingcounter);
     }
   });
@@ -52,4 +56,9 @@ function run() {
   newItembox.querySelector("#getitem").innerHTML = "";
   newItembox.querySelector("#item").innerHTML = "";
   document.body.appendChild(newItembox);
+}
+
+function removeItemBox(button) {
+    var container = button.closest('.itembox');
+    container.remove();
 }
