@@ -44,12 +44,26 @@ html {
     color: #ffffff;
     padding: 14px;
     height: 40px;
-    min-width: 70px;
+    min-width: 50px;
     font-size: 15px;;
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
     display: flex-auto;
+}
+
+.button2.removeButton {
+    background: #ff0000; /* Red background color */
+    border: none;
+    outline: none;
+    color: #ffffff; /* White text color */
+    padding: 5px; /* Adjust padding as needed */
+    height: 30px; /* Adjust height as needed */
+    width: 30px; /* Adjust width as needed */
+    font-size: 12px;
+    margin: 10px;
+    cursor: pointer;
+    flex: none;
 }
 
 .buttonplus {

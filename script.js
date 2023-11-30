@@ -4,8 +4,21 @@ document.addEventListener('click', function(event) {
    } else if (event.target.classList.contains('removeButton')) {
       removeItemBox(event.target);
   }  
-
 });
+
+function ferbotenHtml(text) {
+    var map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+    };
+
+    return text.replace(/[&<>"']/g, function (m) {
+        return map[m];
+    });
+}
 
 function getFnamesandButtons() {
   var containers = document.querySelectorAll('.itembox');
@@ -15,9 +28,8 @@ function getFnamesandButtons() {
     var buttonElement = container.querySelector(".getItemButton");
     if (fnameElement && buttonElement) {
       var containerValues = {
-        fname: fnameElement.value,
-        button: buttonElement
-      };
+        fname: ferbotenHtml(fnameElement.value),
+        button: buttonElement};
       allFnamesButtons.push(containerValues);
     }
   });
@@ -28,9 +40,8 @@ function clickGetItem(button, nestingcounter) {
   nestingcounter++;
   nestingvalue = 20
   var container = button.closest('.itembox');
-  var listOfItems = container.querySelector("#textbox").value;
-  var nameOfTable = container.querySelector("#fname").value;
-
+  var listOfItems = ferbotenHtml(container.querySelector("#textbox").value);
+  var nameOfTable =ferbotenHtml(container.querySelector("#fname").value);
   const array = listOfItems.split(/\r?\n/);
   const nonEmptyLines = array.filter(line => line.trim() !== '');
   if (nonEmptyLines.length > 0) {
@@ -39,18 +50,25 @@ function clickGetItem(button, nestingcounter) {
   } else {
      container.querySelector("#item").innerHTML = "The table " + nameOfTable + " is empty."
   }
-
   var allValues = getFnamesandButtons();
   allValues.forEach(function(element) {
     if (item == element.fname && nestingcounter < nestingvalue) {
-      clickGetItem(element.button, nestingcounter);
-    }
+      clickGetItem(element.button, nestingcounter);}
   });
 }
 
-function run() {
+function newbox() {
   var itembox = document.getElementById("itemboxbox");
   var newItembox = itembox.cloneNode(true);
+  var removeButton = document.createElement("input");
+  removeButton.setAttribute("type", "button");
+  removeButton.setAttribute("class", "button2 removeButton");
+  removeButton.setAttribute("value", "−");
+  removeButton.setAttribute("onclick", "removeItemBox(this)");
+  newItembox.appendChild(removeButton);
+  
+  var getItemButton = newItembox.querySelector(".getItemButton");
+  newItembox.insertBefore(getItemButton, removeButton.nextSibling);
   newItembox.querySelector("#fname").value = "";
   newItembox.querySelector("#textbox").value = "";
   newItembox.querySelector("#getitem").innerHTML = "";

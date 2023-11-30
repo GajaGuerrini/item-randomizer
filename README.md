@@ -26,6 +26,7 @@ lucky charm_ ![image](image.png)
   4. Click on the button with "+" to get more tables <br>![image](image_3.png)
   5. Get one more table <br> ![image](image_4.png)
   6. Fill it out like described in step 1 and 2. Enjoy rolling your items by clicking get item. <br> ![image](image_5.png)
+  7. In case you want to delete a table just click on the "−" button. <br> ![image](image_12.png)
 
 ### Nesting multiple tables:
 
