@@ -20,13 +20,13 @@ food
 water
 weapon
 coins
-lucky charm_ ![image](image.png)
+lucky charm_ ![image](images/image.png)
   3. click on get item <br>
-![image](image_2.png) 
-  4. Click on the button with "+" to get more tables <br>![image](image_3.png)
-  5. Get one more table <br> ![image](image_4.png)
-  6. Fill it out like described in step 1 and 2. Enjoy rolling your items by clicking get item. <br> ![image](image_5.png)
-  7. In case you want to delete a table just click on the "−" button. <br> ![image](image_12.png)
+![image](images/image_2.png) 
+  4. Click on the button with "+" to get more tables <br>![image](images/image_3.png)
+  5. Get one more table <br> ![image](images/image_4.png)
+  6. Fill it out like described in step 1 and 2. Enjoy rolling your items by clicking get item. <br> ![image](images/image_5.png)
+  7. In case you want to delete a table just click on the "−" button. <br> ![image](images/image_12.png)
 
 ### Nesting multiple tables:
 
@@ -35,10 +35,10 @@ This tool lets you roll multiple tables with one click. You can roll up to 20 ta
   2. Fill the bigger textbox with items, each in new line _monsters
 merchant
 bandits
-fortune teller_ <br> ![image](image_7.png)
+fortune teller_ <br> ![image](images/image_7.png)
   3. Create a new table by clicking on "+" button.
-  4. To roll multiple tables the table name needs to match an item in the item list. Check your spelling! This feature will not work if you dont ***use the same word***. <br> ![image](image_8.png)
-<br> Click on get item. If the result of _random encounter_ is  _monsters_ the _monsters_ table will automatically be rolled. <br> ![image](image_11.png)
+  4. To roll multiple tables the table name needs to match an item in the item list. Check your spelling! This feature will not work if you dont ***use the same word***. <br> ![image](images/image_8.png)
+<br> Click on get item. If the result of _random encounter_ is  _monsters_ the _monsters_ table will automatically be rolled. <br> ![image](images/image_11.png)
   
 
 
