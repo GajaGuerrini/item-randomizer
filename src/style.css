@@ -18,7 +18,7 @@ html {
   width: 360px;
   height: 230px;
   border: 7px solid green;
-  padding: 2 auto;
+  padding: 2px auto;
   margin: 0;
   resize: both;
   display: flex;
@@ -92,7 +92,7 @@ html {
   width: 98%;
   min-height: 50px;
   border: 7px solid black;
-  padding: 2 auto;
+  padding: 2px auto;
   margin: 0;
   position: sticky;
   top: 0;
