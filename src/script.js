@@ -6,7 +6,10 @@ document.addEventListener('click', function(event) {
   }  
 });
 
+
 function ferbotenHtml(text) {
+  // Function to replace special characters with HTML entities
+
     var map = {
         '&': '&amp;',
         '<': '&lt;',
@@ -19,7 +22,9 @@ function ferbotenHtml(text) {
     });
 }
 
+
 function getFnamesandButtons() {
+  // Function to get table names and buttons
   var containers = document.querySelectorAll('.itembox');
   var allFnamesButtons = [];
   containers.forEach(function(container) {
@@ -37,6 +42,7 @@ function getFnamesandButtons() {
 
 
 function clickGetItem(button, nestingcounter) {
+  // Function to handle the click event on the "Get Item" button
   nestingcounter++;
   nestingvalue = 20
   var container = button.closest('.itembox');
@@ -57,7 +63,10 @@ function clickGetItem(button, nestingcounter) {
   });
 }
 
+
+
 function newbox() {
+  // Function to create a new item box
   var itembox = document.getElementById("itemboxbox");
   var newItembox = itembox.cloneNode(true);
   var removeButton = document.createElement("input");
@@ -77,6 +86,7 @@ function newbox() {
 }
 
 function removeItemBox(button) {
+  // Function to remove an item box
     var container = button.closest('.itembox');
     container.remove();
 }
